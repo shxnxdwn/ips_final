@@ -474,15 +474,31 @@ img {
 }
 
 .projects__container {
+    max-width: 85.78%;
+    margin: 128px auto 212px;
 }
 
 .projects__head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 46px;
 }
 
 .projects__title {
+    color: #404040;
+    font-family: "Montserrat", sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.projects__buttons {
+    display: flex;
+    gap: 14px;
 }
 
 .projects__button {
+    background: transparent;
 }
 
 .projects__button_active {
@@ -492,15 +508,28 @@ img {
 }
 
 .projects__cards {
+    display: flex;
+    gap: 40px;
 }
 
 .projects__card {
 }
 
 .projects__card-title {
+    margin: 29px 0 16px 0;
+    color: #000000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 120%;
 }
 
 .projects__card-description {
+    color: #6E6E6E;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 200%;
 }
 
 /* === CONTACT ====================================================================================================== */

@@ -273,12 +273,14 @@
                 <div class="projects__container">
                     <div class="projects__head">
                         <h2 class="projects__title">Проекты</h2>
-                        <button class="projects__button">
-                            <img src="img/projects/arrow-left.svg" alt="arrow-left">
-                        </button>
-                        <button class="projects__button projects__button_active">
-                            <img src="img/projects/arrow-right.svg" alt="arrow-right">
-                        </button>
+                        <div class="projects__buttons">
+                            <button class="projects__button">
+                                <img src="img/projects/arrow-left.svg" alt="arrow-left">
+                            </button>
+                            <button class="projects__button projects__button_active">
+                                <img src="img/projects/arrow-right.svg" alt="arrow-right">
+                            </button>
+                        </div>
                     </div>
                     <div class="projects__row">
                         <div class="projects__cards">
@@ -331,7 +333,9 @@
                     <h2 class="contact__title">Оставьте ваш Email и мы свяжемся с вами</h2>
                     <div class="contact__form-wrapper">
                         <form class="contact__form" action="#" method="post" enctype="text/plain">
-                            <input class="contact__input" type="email" name="email" placeholder="Email" required autocomplete="on">
+                            <label>
+                                <input class="contact__input" type="email" name="email" placeholder="Email" required autocomplete="on">
+                            </label>
                             <button class="contact__button" type="submit">Отправить</button>
                         </form>
                     </div>
