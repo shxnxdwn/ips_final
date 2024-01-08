@@ -6,377 +6,370 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans&family=Sarala&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Open+Sans&family=Sarala&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Студия дизайна интерьера</title>
 </head>
 <body>
-    <header class="header">
-        <nav class="header__nav nav">
-            <div class="nav__logo">
-                <a class="nav__logo-link" href="index.html">
-                    <img src="img/logo.png" alt="header-logo">
-                </a>
-            </div>
-            <ul class="nav__list">
-                <li class="nav__list-item">
-                    <a class="nav__list-link" href="#">Услуги</a>
-                </li>
-                <li class="nav__list-item">
-                    <a class="nav__list-link" href="#">Портфолио</a>
-                </li>
-                <li class="nav__list-item">
-                    <a class="nav__list-link" href="#">Цены</a>
-                </li>
-                <li class="nav__list-item">
-                    <a class="nav__list-link" href="#">О нас</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="main">
-        <section class="main__hero hero">
-            <div class="hero__content">
-                <h1 class="hero__title">Дизайн интерьера от картинки до реализации</h1>
-                <div class="hero__button-wrapper">
-                    <a class="hero__button" href="#">Заказать дизайн</a>
+    <div class="page">
+        <!-- Убрать hidden -->
+        <header class="header" hidden>
+            <nav class="header__nav nav">
+                <div class="nav__logo">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="header-logo">
+                    </a>
                 </div>
-            </div>
-        </section>
-
-        <section class="main__mission mission">
-            <div class="mission__container">
-                <div class="mission__title-wrapper">
-                    <h2 class="mission__title">
-                        Наша задача — помочь вам сформулировать, что такое идеальный интерьер именно для вас, вложить в
-                        ваш проект весь наш талант и опыт.
-                    </h2>
+                <ul class="nav__list">
+                    <li class="nav__list-item">
+                        <a class="nav__list-link" href="#">Услуги</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a class="nav__list-link" href="#">Портфолио</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a class="nav__list-link" href="#">Цены</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a class="nav__list-link" href="#">О нас</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="main__hero hero">
+                <div class="hero__content">
+                    <h1 class="hero__title">Дизайн интерьера от картинки до реализации</h1>
+                    <div class="hero__button-wrapper">
+                        <a class="hero__button" href="#">Заказать дизайн</a>
+                    </div>
                 </div>
-                <div class="mission__cards-wrapper">
-                    <ul class="mission__cards">
-                        <li class="mission__cards-card">
-                            <p class="mission__cards-number">01</p>
-                            <h3 class="mission__cards-title">Дизайн-проект интерьера</h3>
-                            <p class="mission__cards-text">
-                                Комплект всех необходимых чертежей для строителей с визуализацией, ведомостями отделки
-                                помещений и проработкой отдельных узлов.
+            </section>
+            <section class="main__mission mission">
+                <div class="mission__container">
+                    <div class="mission__title-wrapper">
+                        <h2 class="mission__title">
+                            Наша задача — помочь вам сформулировать, что такое идеальный интерьер именно для вас, вложить в
+                            ваш проект весь наш талант и опыт.
+                        </h2>
+                    </div>
+                    <div class="mission__cards-wrapper">
+                        <ul class="mission__cards">
+                            <li class="mission__cards-card">
+                                <p class="mission__cards-number">01</p>
+                                <h3 class="mission__cards-title">Дизайн-проект интерьера</h3>
+                                <p class="mission__cards-text">
+                                    Комплект всех необходимых чертежей для строителей с визуализацией, ведомостями отделки
+                                    помещений и проработкой отдельных узлов.
+                                </p>
+                            </li>
+                            <li class="mission__cards-card">
+                                <p class="mission__cards-number">02</p>
+                                <h3 class="mission__cards-title">Спецификация позиций</h3>
+                                <p class="mission__cards-text">
+                                    Спецификация лицевых отделочных материалов и заказных позиций с указанием артикулов и
+                                    стоимостью.
+                                </p>
+                            </li>
+                            <li class="mission__cards-card">
+                                <p class="mission__cards-number">03</p>
+                                <h3 class="mission__cards-title">Авторский надзор</h3>
+                                <p class="mission__cards-text">
+                                    Помощь в сопровождении строительства (по Вашему желанию).
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="main__design design">
+                <div class="design__content">
+                    <div class="design__text">
+                        <h3 class="design__title">Дизайн и покупка в одном месте</h3>
+                        <p class="design__description">
+                            Создавайте мудборды с товарами из каталога. Получите мгновенные расценки, включая стоимость
+                            доставки. Отслеживайте заказы от завода к месту от каждого поставщика.
+                        </p>
+                    </div>
+                    <div class="design__cards">
+                        <img class="design__cards-image" src="img/furniture/1.jpg" alt="design-card-1">
+                        <img class="design__cards-image" src="img/furniture/2.jpg" alt="design-card-2">
+                        <img class="design__cards-image" src="img/furniture/3.jpg" alt="design-card-3">
+                        <img class="design__cards-image" src="img/furniture/4.jpg" alt="design-card-4">
+                    </div>
+                </div>
+                <div class="design__image-wrapper">
+                    <img class="design__image" src="img/design/design.webp" alt="design">
+                </div>
+            </section>
+            <section class="main__order order">
+                <div class="order__container">
+                    <h2 class="order__title">Подберите мебель для любого проекта</h2>
+                    <p class="order__text">
+                        Новый способ для профессионалов интерьера покупать мебель. Просмотрите миллионы продуктов от
+                        ведущих мировых брендов.
+                    </p>
+                    <div class="order__button-wrapper">
+                        <a class="order__button" href="#">Заказать дизайн</a>
+                    </div>
+                </div>
+            </section>
+            <section class="main__furniture furniture">
+                <div class="furniture__container">
+                    <div class="furniture__head">
+                        <div class="furniture__circles">
+                            <img src="img/furniture/circle.svg" alt="circle-1">
+                            <img src="img/furniture/circle.svg" alt="circle-2">
+                            <img src="img/furniture/circle.svg" alt="circle-3">
+                        </div>
+                        <h2 class="furniture__title" hidden>Наша мебель</h2>
+                    </div>
+                    <div class="furniture__main">
+                        <div class="furniture__columns columns">
+                            <div class="furniture__column columns__odd">
+                                <img src="img/furniture/1.jpg" alt="furniture-1">
+                                <img src="img/furniture/5.jpg" alt="furniture-5">
+                                <img src="img/furniture/6.jpg" alt="furniture-6">
+                                <img src="img/furniture/7.jpg" alt="furniture-7">
+                                <img src="img/furniture/8.jpg" alt="furniture-8">
+                            </div>
+                            <div class="furniture__column columns__even">
+                                <img src="img/furniture/9.jpg" alt="furniture-9">
+                                <img src="img/furniture/10.jpg" alt="furniture-10">
+                                <img src="img/furniture/11.jpg" alt="furniture-11">
+                                <img src="img/furniture/12.jpg" alt="furniture-12">
+                            </div>
+                            <div class="furniture__column columns__odd">
+                                <img src="img/furniture/13.jpg" alt="furniture-13">
+                                <img src="img/furniture/14.jpg" alt="furniture-14">
+                                <img src="img/furniture/15.jpg" alt="furniture-15">
+                                <img src="img/furniture/16.jpg" alt="furniture-16">
+                                <img src="img/furniture/17.jpg" alt="furniture-17">
+                            </div>
+                            <div class="furniture__column columns__even">
+                                <img src="img/furniture/18.jpg" alt="furniture-18">
+                                <img src="img/furniture/19.jpg" alt="furniture-19">
+                                <img src="img/furniture/4.jpg" alt="furniture-4">
+                                <img src="img/furniture/8.jpg" alt="furniture-8">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__advantages advantages">
+                <div class="advantages__container">
+                    <ul class="advantages__list">
+                        <li class="advantages__list-item">
+                            <h3 class="advantages__list-title">650+ брендов</h3>
+                            <p class="advantages__list-text">
+                                Просмотрите миллионы продуктов от ведущих мировых брендов.
                             </p>
                         </li>
-                        <li class="mission__cards-card">
-                            <p class="mission__cards-number">02</p>
-                            <h3 class="mission__cards-title">Спецификация позиций</h3>
-                            <p class="mission__cards-text">
-                                Спецификация лицевых отделочных материалов и заказных позиций с указанием артикулов и
-                                стоимостью.
+                        <li class="advantages__list-item">
+                            <h3 class="advantages__list-title">Актуальные цены</h3>
+                            <p class="advantages__list-text">
+                                Смотрите актуальные цены и сроки выполнения заказов прямо сейчас.
                             </p>
                         </li>
-                        <li class="mission__cards-card">
-                            <p class="mission__cards-number">03</p>
-                            <h3 class="mission__cards-title">Авторский надзор</h3>
-                            <p class="mission__cards-text">
-                                Помощь в сопровождении строительства (по Вашему желанию).
+                        <li class="advantages__list-item">
+                            <h3 class="advantages__list-title">Бесплатные образцы</h3>
+                            <p class="advantages__list-text">
+                                Получите бесплатные образцы ткани, дерева, мрамора и ковров.
                             </p>
                         </li>
                     </ul>
                 </div>
-            </div>
-        </section>
-
-        <section class="main__design design">
-            <div class="design__content">
-                <div class="design__text">
-                    <h3 class="design__title">Дизайн и покупка в одном месте</h3>
-                    <p class="design__description">
-                        Создавайте мудборды с товарами из каталога. Получите мгновенные расценки, включая стоимость
-                        доставки. Отслеживайте заказы от завода к месту от каждого поставщика.
-                    </p>
+            </section>
+            <section class="main__team team">
+                <div class="team__left">
+                    <img src="img/team/team.webp" alt="team-photo">
                 </div>
-                <div class="design__cards">
-                    <img src="img/furniture/1.jpg" alt="design-card-1">
-                    <img src="img/furniture/2.jpg" alt="design-card-2">
-                    <img src="img/furniture/3.jpg" alt="design-card-3">
-                    <img src="img/furniture/4.jpg" alt="design-card-4">
-                </div>
-            </div>
-            <div class="design__image">
-                <img src="img/design/design.webp" alt="design">
-            </div>
-        </section>
-
-        <section class="main__order order">
-            <div class="order__container">
-                <h2 class="order__title">Подберите мебель для любого проекта</h2>
-                <p class="order__text">
-                    Новый способ для профессионалов интерьера покупать мебель. Просмотрите миллионы продуктов от
-                    ведущих мировых брендов.
-                </p>
-                <div class="order__button-wrapper">
-                    <a class="order__button" href="#">Заказать дизайн</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="main__furniture furniture">
-            <div class="furniture__container">
-                <div class="furniture__head">
-                    <div class="furniture__circles">
-                        <img src="img/furniture/circle.svg" alt="circle-1">
-                        <img src="img/furniture/circle.svg" alt="circle-2">
-                        <img src="img/furniture/circle.svg" alt="circle-3">
-                    </div>
-                </div>
-                <div class="furniture__main">
-                    <div class="furniture__columns columns">
-                        <div class="furniture__column columns__odd">
-                            <img src="img/furniture/1.jpg" alt="furniture-1">
-                            <img src="img/furniture/5.jpg" alt="furniture-5">
-                            <img src="img/furniture/6.jpg" alt="furniture-6">
-                            <img src="img/furniture/7.jpg" alt="furniture-7">
-                            <img src="img/furniture/8.jpg" alt="furniture-8">
-                        </div>
-                        <div class="furniture__column columns__even">
-                            <img src="img/furniture/9.jpg" alt="furniture-9">
-                            <img src="img/furniture/10.jpg" alt="furniture-10">
-                            <img src="img/furniture/11.jpg" alt="furniture-11">
-                            <img src="img/furniture/12.jpg" alt="furniture-12">
-                        </div>
-                        <div class="furniture__column columns__odd">
-                            <img src="img/furniture/13.jpg" alt="furniture-13">
-                            <img src="img/furniture/14.jpg" alt="furniture-14">
-                            <img src="img/furniture/15.jpg" alt="furniture-15">
-                            <img src="img/furniture/16.jpg" alt="furniture-16">
-                            <img src="img/furniture/17.jpg" alt="furniture-17">
-                        </div>
-                        <div class="furniture__column columns__even">
-                            <img src="img/furniture/18.jpg" alt="furniture-18">
-                            <img src="img/furniture/19.jpg" alt="furniture-19">
-                            <img src="img/furniture/4.jpg" alt="furniture-4">
-                            <img src="img/furniture/8.jpg" alt="furniture-8">
+                <div class="team__right">
+                    <div class="team__content">
+                        <h2 class="team__title">Наша команда позаботиться о вашем комфорте</h2>
+                        <p class="team__text">
+                            У вас есть одно контактное лицо - мы. Мы займемся каждым поставщиком и всем управлением.
+                            Установка на месте, включая сборку, размещение, снятие зацепов и удаление упаковки.
+                            Мы объединим заказы от нескольких поставщиков и доставим их по необходимости.
+                        </p>
+                        <div class="team__button-wrapper">
+                            <a class="team__button" href="#">Заказать дизайн</a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section class="main__advantages advantages">
-            <div class="advantages__container">
-                <ul class="advantages__list">
-                    <li class="advantages__list-item">
-                        <h3 class="advantages__list-title">650+ брендов</h3>
-                        <p class="advantages__list-text">
-                            Просмотрите миллионы продуктов от ведущих мировых брендов.
-                        </p>
+            </section>
+            <section class="main__reviews reviews">
+                <div class="reviews__container">
+                    <h2 class="reviews__title">Отзывы</h2>
+                    <ul class="reviews__list">
+                        <li class="reviews__list-review review">
+                            <div class="review__avatar">
+                                <img src="img/reviews/kirill.png" alt="kirill avatar">
+                            </div>
+                            <div class="review__text">
+                                <blockquote class="review__quote">
+                                    <cite class="review__author">Кирилл Тимофеев</cite>
+                                    <p class="review__content">
+                                        Все было сделано отлично. Особенно это понимаешь после того, как прожил несколько
+                                        месяцев в реализованном интерьере.Студия смогла предложить нам интересные идеи,
+                                        детали для оформления интерьера. При этом все предложенные и реализованные решения
+                                        радуют нас ежедневно.
+                                    </p>
+                                </blockquote>
+                            </div>
+                        </li>
+                        <li class="reviews__list-review review">
+                            <div class="review__avatar">
+                                <img src="img/reviews/petr.png" alt="petr avatar">
+                            </div>
+                            <div class="review__text">
+                                <blockquote class="review__quote">
+                                    <cite class="review__author">Петр Морозов</cite>
+                                    <p class="review__content">
+                                        У нас было изначально понимание того, что ремонт в своей квартире мы будем делать
+                                        своими силами. Ваши работы нам очень нравятся — цветовые решения, планировки и т.д.
+                                        — поэтому были очень благодарны, что вы предложили такую форму сотрудничества, как
+                                        платная консультация.
+                                    </p>
+                                </blockquote>
+                            </div>
+                        </li>
+                        <li class="reviews__list-review review">
+                            <div class="review__avatar">
+                                <img src="img/reviews/alina.png" alt="alina avatar">
+                            </div>
+                            <div class="review__text">
+                                <blockquote class="review__quote">
+                                    <cite class="review__author">Алина Богданова</cite>
+                                    <p class="review__content">
+                                        После первой консультации у меня была полная неразбериха в голове, но потом я все
+                                        обдумала и мне очень понравились новые идеи. У меня, так сказать, появилось новое
+                                        вдохновение. Для меня это было ценно.Стало проще. Многие вопросы, по которым я
+                                        никак не могла принять решения — разрешились.
+                                    </p>
+                                </blockquote>
+                            </div>
+                        </li>
+                        <li class="reviews__list-review review">
+                            <div class="review__avatar">
+                                <img src="img/reviews/maria.png" alt="maria avatar">
+                            </div>
+                            <div class="review__text">
+                                <blockquote class="review__quote">
+                                    <cite class="review__author">Мария Сахорова</cite>
+                                    <p class="review__content">
+                                        Здорово каждый день ощущать, что планировка квартиры очень продуманная. Проявляется
+                                        это в мелочах, но из них и складывается комфорт. Решение с проемом, соединяющим
+                                        кухню и гостиную — главная фишка — позволила вытянуть изначально безнадёжную
+                                        планировку и сделать подобие большой гостиной.
+                                    </p>
+                                </blockquote>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="main__projects projects">
+                <div class="projects__container">
+                    <div class="projects__head">
+                        <h2 class="projects__title">Проекты</h2>
+                        <button class="projects__button">
+                            <img src="img/projects/arrow-left.svg" alt="arrow-left">
+                        </button>
+                        <button class="projects__button projects__button_active">
+                            <img src="img/projects/arrow-right.svg" alt="arrow-right">
+                        </button>
+                    </div>
+                    <div class="projects__row">
+                        <div class="projects__cards">
+                            <figure class="projects__card">
+                                <img src="img/projects/moskow-city.jpg" alt="moskow-city">
+                                <figcaption>
+                                    <h3 class="projects__card-title">Москва-Сити</h3>
+                                    <p class="projects__card-description">
+                                        Эти апартаменты, на 79-м этаже башни Федерация в Москва-Сити, предназначены для
+                                        посуточной аренды в AirBnB. Каждый желающий сможет тут переночевать.
+                                    </p>
+                                </figcaption>
+                            </figure>
+                            <figure class="projects__card">
+                                <img src="img/projects/ss70.jpg" alt="ss70">
+                                <figcaption>
+                                    <h3 class="projects__card-title">SS70</h3>
+                                    <p class="projects__card-description">
+                                        Эта квартира в ЖК Сердце столицы, ещё в процессе согласования. И, чем дальше мы
+                                        двигаемся по правкам, тем больше клиент склоняется к первому варианту
+                                    </p>
+                                </figcaption>
+                            </figure>
+                            <figure class="projects__card">
+                                <img src="img/projects/voron-170.jpg" alt="voron-170">
+                                <figcaption>
+                                    <h3 class="projects__card-title">Voron, 170</h3>
+                                    <p class="projects__card-description">
+                                        Стена за телевизором, это архитектурный бетон. По заказу клиента выполненный в
+                                        стилистике природного камня.
+                                    </p>
+                                </figcaption>
+                            </figure>
+                            <figure class="projects__card">
+                                <img src="img/projects/studio-80.jpg" alt="studio-80">
+                                <figcaption>
+                                    <h3 class="projects__card-title">Studio, 80</h3>
+                                    <p class="projects__card-description">
+                                        Квартира без стен с единым пространством,  открытым потолком и темными стенами,
+                                        с акцентом на центральную колонну.
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__contact contact">
+                <div class="contact__container">
+                    <h2 class="contact__title">Оставьте ваш Email и мы свяжемся с вами</h2>
+                    <div class="contact__form">
+                        <form action="#" method="post" enctype="text/plain">
+                            <label>
+                                <input type="email" name="email" placeholder="Email" required autocomplete="on">
+                            </label>
+                            <button type="submit">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__logo">
+                    <img src="img/logo.png" alt="header-logo">
+                </div>
+                <ul class="footer__socials">
+                    <li class="footer__social">
+                        <a class="footer__social-link" href="#">
+                            <img src="img/socials/instagram.svg" alt="instagram-icon">
+                        </a>
                     </li>
-                    <li class="advantages__list-item">
-                        <h3 class="advantages__list-title">Актуальные цены</h3>
-                        <p class="advantages__list-text">
-                            Смотрите актуальные цены и сроки выполнения заказов прямо сейчас.
-                        </p>
+                    <li class="footer__social">
+                        <a class="footer__social-link" href="#">
+                            <img src="img/socials/dribbble.svg" alt="dribbble-icon">
+                        </a>
                     </li>
-                    <li class="advantages__list-item">
-                        <h3 class="advantages__list-title">Бесплатные образцы</h3>
-                        <p class="advantages__list-text">
-                            Получите бесплатные образцы ткани, дерева, мрамора и ковров.
-                        </p>
+                    <li class="footer__social">
+                        <a class="footer__social-link" href="#">
+                            <img src="img/socials/twitter.svg" alt="twitter-icon">
+                        </a>
+                    </li>
+                    <li class="footer__social">
+                        <a class="footer__social-link" href="#">
+                            <img src="img/socials/youtube.svg" alt="youtube-icon">
+                        </a>
                     </li>
                 </ul>
             </div>
-        </section>
-
-        <section class="main__team team">
-            <div class="team__left">
-                <img src="img/team/team.webp" alt="team-photo">
-            </div>
-            <div class="team__right">
-                <div class="team__content">
-                    <h2 class="team__title">Наша команда позаботиться о вашем комфорте</h2>
-                    <p class="team__text">
-                        У вас есть одно контактное лицо - мы. Мы займемся каждым поставщиком и всем управлением.
-                        Установка на месте, включая сборку, размещение, снятие зацепов и удаление упаковки.
-                        Мы объединим заказы от нескольких поставщиков и доставим их по необходимости.
-                    </p>
-                    <div class="team__button-wrapper">
-                        <a class="team__button" href="#">Заказать дизайн</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="main__reviews reviews">
-            <div class="reviews__container">
-                <ul class="reviews__list">
-                    <li class="reviews__list-review review">
-                        <div class="review__avatar">
-                            <img src="img/reviews/kirill.png" alt="kirill avatar">
-                        </div>
-                        <div class="review__text">
-                            <blockquote class="review__quote">
-                                <cite class="review__author">Кирилл Тимофеев</cite>
-                                <p class="review__content">
-                                    Все было сделано отлично. Особенно это понимаешь после того, как прожил несколько
-                                    месяцев в реализованном интерьере.Студия смогла предложить нам интересные идеи,
-                                    детали для оформления интерьера. При этом все предложенные и реализованные решения
-                                    радуют нас ежедневно.
-                                </p>
-                            </blockquote>
-                        </div>
-                    </li>
-                    <li class="reviews__list-review review">
-                        <div class="review__avatar">
-                            <img src="img/reviews/petr.png" alt="petr avatar">
-                        </div>
-                        <div class="review__text">
-                            <blockquote class="review__quote">
-                                <cite class="review__author">Петр Морозов</cite>
-                                <p class="review__content">
-                                    У нас было изначально понимание того, что ремонт в своей квартире мы будем делать
-                                    своими силами. Ваши работы нам очень нравятся — цветовые решения, планировки и т.д.
-                                    — поэтому были очень благодарны, что вы предложили такую форму сотрудничества, как
-                                    платная консультация.
-                                </p>
-                            </blockquote>
-                        </div>
-                    </li>
-                    <li class="reviews__list-review review">
-                        <div class="review__avatar">
-                            <img src="img/reviews/alina.png" alt="alina avatar">
-                        </div>
-                        <div class="review__text">
-                            <blockquote class="review__quote">
-                                <cite class="review__author">Алина Богданова</cite>
-                                <p class="review__content">
-                                    После первой консультации у меня была полная неразбериха в голове, но потом я все
-                                    обдумала и мне очень понравились новые идеи. У меня, так сказать, появилось новое
-                                    вдохновение. Для меня это было ценно.Стало проще. Многие вопросы, по которым я
-                                    никак не могла принять решения — разрешились.
-                                </p>
-                            </blockquote>
-                        </div>
-                    </li>
-                    <li class="reviews__list-review review">
-                        <div class="review__avatar">
-                            <img src="img/reviews/maria.png" alt="maria avatar">
-                        </div>
-                        <div class="review__text">
-                            <blockquote class="review__quote">
-                                <cite class="review__author">Мария Сахорова</cite>
-                                <p class="review__content">
-                                    Здорово каждый день ощущать, что планировка квартиры очень продуманная. Проявляется
-                                    это в мелочах, но из них и складывается комфорт. Решение с проемом, соединяющим
-                                    кухню и гостиную — главная фишка — позволила вытянуть изначально безнадёжную
-                                    планировку и сделать подобие большой гостиной.
-                                </p>
-                            </blockquote>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="main__projects projects">
-            <div class="projects_container">
-                <div class="projects__head">
-                    <h2 class="projects__title">Проекты</h2>
-                    <button class="projects__button">
-                        <img src="img/projects/arrow-left.svg" alt="arrow-left">
-                    </button>
-                    <button class="projects__button projects__button_active">
-                        <img src="img/projects/arrow-right.svg" alt="arrow-right">
-                    </button>
-                </div>
-                <div class="projects__row">
-                    <div class="projects__cards">
-                        <figure class="projects__card">
-                            <img src="img/projects/moskow-city.jpg" alt="moskow-city">
-                            <figcaption>
-                                <h3 class="projects__card-title">Москва-Сити</h3>
-                                <p class="projects__card-description">
-                                    Эти апартаменты, на 79-м этаже башни Федерация в Москва-Сити, предназначены для
-                                    посуточной аренды в AirBnB. Каждый желающий сможет тут переночевать.
-                                </p>
-                            </figcaption>
-                        </figure>
-                        <figure class="projects__card">
-                            <img src="img/projects/ss70.jpg" alt="ss70">
-                            <figcaption>
-                                <h3 class="projects__card-title">SS70</h3>
-                                <p class="projects__card-description">
-                                    Эта квартира в ЖК Сердце столицы, ещё в процессе согласования. И, чем дальше мы
-                                    двигаемся по правкам, тем больше клиент склоняется к первому варианту
-                                </p>
-                            </figcaption>
-                        </figure>
-                        <figure class="projects__card">
-                            <img src="img/projects/voron-170.jpg" alt="voron-170">
-                            <figcaption>
-                                <h3 class="projects__card-title">Voron, 170</h3>
-                                <p class="projects__card-description">
-                                    Стена за телевизором, это архитектурный бетон. По заказу клиента выполненный в
-                                    стилистике природного камня.
-                                </p>
-                            </figcaption>
-                        </figure>
-                        <figure class="projects__card">
-                            <img src="img/projects/studio-80.jpg" alt="studio-80">
-                            <figcaption>
-                                <h3 class="projects__card-title">Studio, 80</h3>
-                                <p class="projects__card-description">
-                                    Квартира без стен с единым пространством,  открытым потолком и темными стенами,
-                                    с акцентом на центральную колонну.
-                                </p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="main__contact contact">
-            <div class="contact__container">
-                <h2 class="contact__title">Оставьте ваш Email и мы свяжемся с вами</h2>
-                <div class="contact__form">
-                    <form action="#" method="post" enctype="text/plain">
-                        <label>
-                            <input type="email" name="email" placeholder="Email" required autocomplete="on">
-                        </label>
-                        <button type="submit">Отправить</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="footer__container">
-            <div class="footer__logo">
-                <img src="img/logo.png" alt="header-logo">
-            </div>
-            <ul class="footer__socials">
-                <li class="footer__social">
-                    <a class="footer__social-link" href="#">
-                        <img src="img/socials/instagram.svg" alt="instagram-icon">
-                    </a>
-                </li>
-                <li class="footer__social">
-                    <a class="footer__social-link" href="#">
-                        <img src="img/socials/dribbble.svg" alt="dribbble-icon">
-                    </a>
-                </li>
-                <li class="footer__social">
-                    <a class="footer__social-link" href="#">
-                        <img src="img/socials/twitter.svg" alt="twitter-icon">
-                    </a>
-                </li>
-                <li class="footer__social">
-                    <a class="footer__social-link" href="#">
-                        <img src="img/socials/youtube.svg" alt="youtube-icon">
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </footer>
-
+        </footer>
+    </div>
     <script src="js/script.js"></script>
 </body>
 </html>
