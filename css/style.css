@@ -133,7 +133,7 @@ img {
     font-family: "Sarala", sans-serif;
     font-size: 18px;
     font-weight: 400;
-    line-height: 133.333%
+    line-height: 133%
 }
 
 /* === MISSION ====================================================================================================== */
@@ -303,7 +303,7 @@ img {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 160%; /* 25.6px */
+    line-height: 160%;
 }
 
 .order__button-wrapper {
@@ -318,7 +318,7 @@ img {
     font-family: "Sarala", sans-serif;
     font-size: 18px;
     font-weight: 400;
-    line-height: 133.333%;
+    line-height: 133%;
     background-color: #000000;
 }
 
@@ -512,6 +512,8 @@ img {
 }
 
 .contact__container {
+    width: 38.02%;
+    margin: 91px auto 108px;
 }
 
 .contact__title {
@@ -524,7 +526,56 @@ img {
     line-height: 120%;
 }
 
+.contact__form-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
 .contact__form {
+    display: flex;
+}
+
+.contact__input {
+    display: block;
+    box-sizing: content-box;
+    width: 295px;
+    padding: 14px 16px;
+    caret-color: transparent;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #000;
+    font-family: "Sarala", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 133%;
+}
+
+.contact__input:focus {
+    outline: none;
+    box-shadow: 1px 1px 3px #ACACAC,
+                -1px -1px 3px #ACACAC;
+}
+
+.contact__input::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+    font-family: "Sarala", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 133%;
+}
+
+.contact__button {
+    display: block;
+    box-sizing: content-box;
+    width: 138px;
+    padding: 15px 24px;
+    border-radius: 0 5px 5px 0;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: "Sarala", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 133%;
+    background-color: #18191F;
 }
 
 /* === FOOTER ======================================================================================================= */
