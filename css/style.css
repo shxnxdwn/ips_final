@@ -40,7 +40,7 @@ img {
 }
 
 .header {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 50%;
     z-index: 3;
@@ -66,7 +66,6 @@ img {
 }
 
 .nav__logo {
-
 }
 
 .nav__list {
@@ -95,11 +94,11 @@ img {
 /* === HERO ========================================================================================================= */
 
 .main__hero {
+    position: relative;
     height: 100vh;
 }
 
 .hero {
-    position: relative;
     background-image: url("../img/hero/hero_bc.webp");
     background-repeat: no-repeat;
     background-size: cover;
@@ -126,13 +125,14 @@ img {
 }
 
 .hero__button {
+    display: inline-block;
+    width: 277px;
     padding: 16px 65px;
     border: 1px solid #FFFFFF;
     color: #FFFFFF;
     text-align: center;
     font-family: "Sarala", sans-serif;
     font-size: 18px;
-    font-weight: 400;
     line-height: 133%
 }
 
@@ -150,7 +150,7 @@ img {
 }
 
 .mission__title-wrapper {
-    max-width: 65.83%;
+    width: 65.83%;
     margin: 0 auto 128px;
 }
 
@@ -197,7 +197,6 @@ img {
     color: #F1EDEA;
     font-family: "Open Sans", sans-serif;
     font-size: 144px;
-    font-weight: 400;
     line-height: 100%;
 }
 
@@ -221,18 +220,17 @@ img {
 /* === DESIGN ======================================================================================================= */
 
 .main__design {
-
+    position: relative;
 }
 
 .design {
-    position: relative;
 }
 
 .design__content {
     position: absolute;
     top: 17.9%;
     left: 7.2%;
-    max-width: 63.42%;
+    width: 63.42%;
     display: flex;
 }
 
@@ -259,12 +257,13 @@ img {
 
 .design__cards {
     display: grid;
-    grid-template: 228px 228px / 228px 228px;
+    grid-template: repeat(2, 228px) / repeat(2, 228px);
 }
 
 .design__cards-image {
-    width: 100%;
+    width: 101%;
     height: 100%;
+    object-fit: cover;
 }
 
 .design__image {
@@ -280,7 +279,7 @@ img {
 }
 
 .order__container {
-    max-width: 51.92%;
+    width: 51.92%;
     margin: 154px auto 315px;
 }
 
@@ -301,7 +300,6 @@ img {
     text-align: center;
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: 160%;
 }
@@ -312,13 +310,14 @@ img {
 }
 
 .order__button {
+    display: inline-block;
+    width: 277px;
     padding: 16px 65px;
     color: #FFFFFF;
     text-align: center;
     font-family: "Sarala", sans-serif;
     font-size: 18px;
-    font-weight: 400;
-    line-height: 133%;
+    line-height: 130%;
     background-color: #000000;
 }
 
@@ -328,15 +327,30 @@ img {
 }
 
 .furniture {
+    background-color: #232323;
 }
 
 .furniture__container {
+    position: relative;
+    bottom: 173px;
+    left: 0;
+    width: 69.531%;
+    height: 838px;
+    margin: 0 auto;
+    border-radius: 16px;
+    background-color: #FFFFFF;
 }
 
 .furniture__head {
+    background-color: #F7F7F7;
+    padding: 15px 0;
+    border-radius: 16px 16px 0 0;
 }
 
 .furniture__circles {
+    display: flex;
+    gap: 6px;
+    margin-left: 20px;
 }
 
 .furniture__main {
@@ -346,15 +360,28 @@ img {
 }
 
 .columns {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
 }
 
 .furniture__column {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.furniture__column-image {
+    width: 175px;
+    height: 175px;
+    object-fit: cover;
 }
 
 .columns__odd {
 }
 
 .columns__even {
+    align-self: center;
 }
 
 /* === ADVANTAGES =================================================================================================== */
@@ -366,7 +393,7 @@ img {
 }
 
 .advantages__container {
-    max-width: 65.1%;
+    width: 65.1%;
     margin: 157px auto 165px;
 }
 
@@ -404,6 +431,7 @@ img {
 }
 
 .team {
+    display: flex;
 }
 
 .team__left {
@@ -413,18 +441,41 @@ img {
 }
 
 .team__content {
+    width: 69.375%;
+    margin: 14.819% auto auto;
 }
 
 .team__title {
+    margin-bottom: 46px;
+    color: #404040;
+    font-family: "Montserrat", sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 120%;
 }
 
 .team__text {
+    color: #6E6E6E;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    margin-bottom: 66px;
 }
 
 .team__button-wrapper {
 }
 
 .team__button {
+    display: inline-block;
+    width: 277px;
+    padding: 16px 65px;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: "Sarala", sans-serif;
+    font-size: 18px;
+    line-height: 133%;
+    background-color: #000000;
 }
 
 /* === REVIEWS ====================================================================================================== */
@@ -433,36 +484,96 @@ img {
 }
 
 .reviews {
+    background-color: #F1E9E6;
 }
 
 .reviews__container {
+    width: 43.125%;
+    margin: 0 auto;
+    padding: 125px 0 156px;
 }
 
 .reviews__title {
+    margin-bottom: 70px;
+    color: #404040;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 120%;
 }
 
 .reviews__list {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
 .reviews__list-review {
 }
 
 .review {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.review:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.review:nth-child(odd)::before {
+    content: "";
+    position: absolute;
+    top: 38px;
+    left: 129px;
+    border: 0 solid transparent;
+    border-left-width: 22px;
+    border-top: 22px solid #FFFFFF;
+}
+
+.review:nth-child(even)::before {
+    content: "";
+    position: absolute;
+    top: 35px;
+    right: 129px;
+    border: 0 solid transparent;
+    border-bottom-width: 22px;
+    border-left: 22px solid #FFFFFF;
 }
 
 .review__avatar {
 }
 
 .review__text {
+    position: relative;
+    padding: 32px 54px 36px 42px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
 }
 
 .review__quote {
 }
 
+
 .review__author {
+    display: block;
+    margin-bottom: 12px;
+    color: #000000;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 130%;
 }
 
 .review__content {
+    color: #6E6E6E;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
 }
 
 /* === PROJECTS ===================================================================================================== */
@@ -474,7 +585,7 @@ img {
 }
 
 .projects__container {
-    max-width: 85.78%;
+    width: 85.78%;
     margin: 128px auto 212px;
 }
 
@@ -574,7 +685,6 @@ img {
     border: 1px solid #000;
     font-family: "Sarala", sans-serif;
     font-size: 18px;
-    font-weight: 400;
     line-height: 133%;
 }
 
@@ -588,7 +698,6 @@ img {
     color: rgba(0, 0, 0, 0.3);
     font-family: "Sarala", sans-serif;
     font-size: 18px;
-    font-weight: 400;
     line-height: 133%;
 }
 
@@ -602,7 +711,6 @@ img {
     text-align: center;
     font-family: "Sarala", sans-serif;
     font-size: 18px;
-    font-weight: 400;
     line-height: 133%;
     background-color: #18191F;
 }
