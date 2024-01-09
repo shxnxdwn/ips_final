@@ -44,7 +44,7 @@ img {
     top: 0;
     left: 50%;
     z-index: 3;
-    width: 85.78%;
+    width: 85.79%;
     transform: translateX(-50%);
 }
 
@@ -109,14 +109,14 @@ img {
     position: absolute;
     top: 31.15%;
     left: 13.39%;
-    max-width: 852px;
+    width: 44.375%;
 }
 
 .hero__title {
-    margin-bottom: 57px;
+    margin-bottom: calc(30px + (57 - 30) * ((100vw - 320px) / (1920 - 320)));
     color: #FFFFFF;
     font-family: "Montserrat", sans-serif;
-    font-size: 60px;
+    font-size: calc(36px + (60 - 36) * ((100vw - 320px) / (1920 - 320)));
     font-weight: 400;
     line-height: 120%;
 }
@@ -136,6 +136,35 @@ img {
     line-height: 133%
 }
 
+.hero__slider-wrapper {
+    width: 85.79%;
+    margin: 0 auto;
+}
+
+.hero__slider {
+    position: absolute;
+    bottom: 6.034%;
+    left: 7.187%;
+    display: flex;
+    gap: 12px;
+}
+
+@media screen and (max-width: 1023px) {
+    .hero__content {
+        position: static;
+        width: 80%;
+        margin: 0 auto;
+        padding: 40% 0 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero__title {
+        text-align: center;
+    }
+}
+
 /* === MISSION ====================================================================================================== */
 
 .main__mission {
@@ -145,7 +174,7 @@ img {
 }
 
 .mission__container {
-    width: 85.78%;
+    width: 85.79%;
     margin: 115px auto 169px;
 }
 
@@ -585,7 +614,7 @@ img {
 }
 
 .projects__container {
-    width: 85.78%;
+    width: 85.79%;
     margin: 128px auto 212px;
 }
 
@@ -718,7 +747,7 @@ img {
 /* === FOOTER ======================================================================================================= */
 
 .footer {
-    width: 85.78%;
+    width: 85.79%;
     margin: 0 auto;
 }
 
