@@ -175,12 +175,12 @@ img {
 
 .mission__container {
     width: 85.79%;
-    margin: 115px auto 169px;
+    margin: 6.34% auto 9.31%;
 }
 
 .mission__title-wrapper {
     width: 65.83%;
-    margin: 0 auto 128px;
+    margin: 0 auto 7.78%;
 }
 
 .mission__title-wrapper::before, .mission__title-wrapper::after {
@@ -203,7 +203,7 @@ img {
     color: #404040;
     text-align: center;
     font-family: "Montserrat", sans-serif;
-    font-size: 28px;
+    font-size: calc(20px + (28 - 20) * ((100vw - 320px) / (1920 - 320)));
     font-weight: 400;
     line-height: 120%;
 }
@@ -214,11 +214,11 @@ img {
 .mission__cards {
     display: flex;
     justify-content: space-between;
-    gap: 230px;
+    gap: 13.964%;
 }
 
 .mission__cards-card {
-    max-width: 396px;
+    width: 24.043%;
 }
 
 .mission__cards-number {
@@ -233,7 +233,7 @@ img {
     margin-bottom: 16px;
     color: #000000;
     font-family: "Montserrat", sans-serif;
-    font-size: 26px;
+    font-size: calc(18px + (26 - 18) * ((100vw - 320px) / (1920 - 320)));
     font-weight: 400;
     line-height: 100%;
 }
@@ -241,9 +241,39 @@ img {
 .mission__cards-text {
     color: #6E6E6E;
     font-family: "Montserrat", sans-serif;
-    font-size: 16px;
+    font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
     font-weight: 400;
     line-height: 160%;
+}
+
+@media screen and (max-width: 1023px) {
+    .mission__cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+    .mission__cards-card {
+        width: 100%;
+        padding: 15px;
+    }
+    .mission__cards-number {
+        text-align: center;
+    }
+    .mission__cards-title {
+        text-align: center;
+    }
+    .mission__cards-text {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .mission__title-wrapper {
+        width: 100%;
+    }
+    .mission__container {
+        margin: 15% auto 20%;
+    }
 }
 
 /* === DESIGN ======================================================================================================= */
