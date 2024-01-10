@@ -647,17 +647,17 @@ img {
 }
 
 .reviews__container {
-    width: 43.125%;
+    max-width: 828px;
     margin: 0 auto;
-    padding: 125px 0 156px;
+    padding: 6.515% 0 8.13%;
 }
 
 .reviews__title {
-    margin-bottom: 70px;
+    margin-bottom: 8.46%;
     color: #404040;
     text-align: center;
     font-family: "Montserrat", sans-serif;
-    font-size: 48px;
+    font-size: calc(30px + (48 - 30) * ((100vw - 320px) / (1920 - 320)));
     font-weight: 400;
     line-height: 120%;
 }
@@ -722,7 +722,7 @@ img {
     color: #000000;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
-    font-size: 20px;
+    font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1920 - 320)));
     font-weight: 600;
     line-height: 130%;
 }
@@ -730,9 +730,41 @@ img {
 .review__content {
     color: #6E6E6E;
     font-family: "Montserrat", sans-serif;
-    font-size: 16px;
+    font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (1920 - 320)));
     font-weight: 400;
     line-height: 160%;
+}
+
+@media screen and (max-width: 962px) {
+    .reviews__container {
+        padding: 10% 25px 10%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .review:nth-child(odd)::before {
+        display: none;
+    }
+
+    .review:nth-child(even)::before {
+        display: none;
+    }
+    .review,
+    .review:nth-child(even) {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .reviews__title {
+        margin-bottom: 15%;
+    }
+    .review__author,
+    .review__content {
+        text-align: center;
+    }
+    .review__text {
+        padding: 20px;
+    }
 }
 
 /* === PROJECTS ===================================================================================================== */
