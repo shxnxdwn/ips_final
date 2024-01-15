@@ -1,4 +1,4 @@
-/* === NULL STYLE =================================================================================================== */
+/* === COMMON STYLE ================================================================================================= */
 
 * {
     padding: 0;
@@ -14,11 +14,12 @@ a:focus, a:active {
     outline: none;
 }
 
-html, body {
+body {
     line-height: 1;
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
 }
 
 a, a:visited, a:hover {
@@ -33,11 +34,15 @@ img {
     display: block;
 }
 
-/* === HEADER ======================================================================================================= */
-
 .page {
     position: relative;
 }
+
+.noScroll {
+    overflow: hidden;
+}
+
+/* === HEADER ======================================================================================================= */
 
 .header {
     position: absolute;
@@ -82,9 +87,6 @@ img {
     display: flex;
     justify-content: space-between;
     column-gap: 60px;
-}
-
-.nav__list-item {
 }
 
 .nav__list-link {
@@ -174,15 +176,15 @@ img {
 
 @media screen and (max-width: 629px) {
     .nav__list {
-        display: none;
         position: fixed;
-        top: 0;
+        top: -1000px;
         left: -14.21%;
-        width: 114.21vw;
+        width: 114.21vw;;
         height: 100vh;
-        padding: 40% 0;
+        padding: 15vh 0;
         flex-direction: column;
         background: linear-gradient(to bottom, rgb(124, 113, 101) 0%, rgb(72, 50, 41) 100%);
+        transition: top 0.6s;
     }
     .nav__list-link {
         color: #FFFFFF;
@@ -194,13 +196,14 @@ img {
     .nav__list-link:hover::before,
     .nav__list-link:hover::after,
     .nav__list-link:active {
-        visibility: hidden;
+        display: none;
     }
     .nav__burger-button {
         display: block;
     }
     .nav__list.open {
-        display: flex;
+        top: 0;
+        transition: top 0.6s;
     }
 }
 
