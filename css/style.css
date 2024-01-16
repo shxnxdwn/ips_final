@@ -86,6 +86,7 @@ img {
 /* === POPUP ======================================================================================================== */
 
 .popup {
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -1099,11 +1100,7 @@ img {
 }
 
 .contact__input:focus {
-    outline: none;
-    box-shadow: inset 1px 1px 1px #ACACAC,
-                inset 1px -1px 1px #ACACAC,
-                inset -1px -1px 1px #ACACAC,
-                inset -1px 1px 1px #ACACAC;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .contact__input::placeholder {
