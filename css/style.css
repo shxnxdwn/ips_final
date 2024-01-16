@@ -177,7 +177,7 @@ img {
 @media screen and (max-width: 629px) {
     .nav__list {
         position: fixed;
-        top: -1000px;
+        top: -2000px;
         left: -14.21%;
         z-index: 5;
         width: 114.21vw;;
@@ -185,7 +185,7 @@ img {
         padding: 15vh 0;
         flex-direction: column;
         background: linear-gradient(to bottom, rgb(103, 101, 100) 0%, rgb(122, 86, 65) 100%);
-        transition: top 0.6s;
+        transition: top 1s;
     }
     .nav__list-link {
         color: #FFFFFF;
