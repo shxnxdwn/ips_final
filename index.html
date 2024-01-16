@@ -2,8 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
@@ -15,6 +14,32 @@
 </head>
 <body>
     <div class="page">
+        <div class="page__popup popup">
+            <div class="popup__content">
+                <div class="popup__close-button"></div>
+                <h3 class="popup__title">Мы перезвоним Вам в течение 15 минут</h3>
+                <form class="popup__form" action="#" method="post" enctype="text/plain">
+                    <div class="popup__form-box">
+                        <label for="name">
+                            <input class="popup__input" type="text" id="name" placeholder="Ваше имя" required>
+                        </label>
+                    </div>
+                    <div class="popup__form-box">
+                        <label for="email">
+                            <input class="popup__input" type="email" id="email" placeholder="Email" autocomplete="email" required>
+                        </label>
+                    </div>
+                    <div class="popup__form-box">
+                        <label for="phone">
+                            <input class="popup__input" type="tel" id="phone" placeholder="Ваш телефон" autocomplete="tel" required>
+                        </label>
+                    </div>
+                    <div class="popup__form-box">
+                        <button class="popup__button button button_white" type="submit">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
         <header class="header">
             <nav class="header__nav nav">
                 <div class="nav__logo">
@@ -48,7 +73,7 @@
                 <div class="hero__content">
                     <h1 class="hero__title">Дизайн интерьера от картинки до реализации</h1>
                     <div class="hero__button-wrapper">
-                        <a class="hero__button" href="#">Заказать дизайн</a>
+                        <a class="hero__button button button_white" href="#">Заказать дизайн</a>
                     </div>
                 </div>
                 <div class="hero__slider-wrapper">
@@ -85,8 +110,7 @@
                             <li class="mission__cards-card">
                                 <p class="mission__cards-number">03</p>
                                 <h3 class="mission__cards-title">Авторский надзор</h3>
-                                <p class="mission__cards-text">Помощь в сопровождении строительства
-                                    (по Вашему желанию).</p>
+                                <p class="mission__cards-text">Помощь в сопровождении строительства (по Вашему желанию).</p>
                             </li>
                         </ul>
                     </div>
@@ -97,8 +121,7 @@
                     <div class="design__text">
                         <h3 class="design__title">Дизайн и покупка в одном месте</h3>
                         <p class="design__description">Создавайте мудборды с товарами из каталога. Получите мгновенные
-                            расценки, включая стоимость доставки. Отслеживайте заказы от завода к месту от каждого
-                            поставщика.</p>
+                            расценки, включая стоимость доставки. Отслеживайте заказы от завода к месту от каждого поставщика.</p>
                     </div>
                     <div class="design__photo-wrapper">
                         <img class="design__photo" src="img/design/furniture-photo.webp" alt="furniture-photo">
@@ -114,7 +137,7 @@
                     <p class="order__text">Новый способ для профессионалов интерьера покупать мебель. Просмотрите
                         миллионы продуктов от ведущих мировых брендов.</p>
                     <div class="order__button-wrapper">
-                        <a class="order__button" href="#">Заказать дизайн</a>
+                        <a class="order__button button button_black" href="#">Заказать дизайн</a>
                     </div>
                 </div>
             </section>
@@ -165,18 +188,15 @@
                     <ul class="advantages__list">
                         <li class="advantages__list-item">
                             <h3 class="advantages__list-title">650+ брендов</h3>
-                            <p class="advantages__list-text">Просмотрите миллионы продуктов от ведущих мировых
-                                брендов.</p>
+                            <p class="advantages__list-text">Просмотрите миллионы продуктов от ведущих мировых брендов.</p>
                         </li>
                         <li class="advantages__list-item">
                             <h3 class="advantages__list-title">Актуальные цены</h3>
-                            <p class="advantages__list-text">Смотрите актуальные цены и сроки выполнения заказов
-                                прямо сейчас.</p>
+                            <p class="advantages__list-text">Смотрите актуальные цены и сроки выполнения заказов прямо сейчас.</p>
                         </li>
                         <li class="advantages__list-item">
                             <h3 class="advantages__list-title">Бесплатные образцы</h3>
-                            <p class="advantages__list-text">Получите бесплатные образцы ткани, дерева, мрамора
-                                и ковров.</p>
+                            <p class="advantages__list-text">Получите бесплатные образцы ткани, дерева, мрамора и ковров.</p>
                         </li>
                     </ul>
                 </div>
@@ -193,7 +213,7 @@
                             и удаление упаковки. Мы объединим заказы от нескольких поставщиков и доставим их
                             по необходимости.</p>
                         <div class="team__button-wrapper">
-                            <a class="team__button" href="#">Заказать дизайн</a>
+                            <a class="team__button button button_black" href="#">Заказать дизайн</a>
                         </div>
                     </div>
                 </div>
@@ -240,8 +260,7 @@
                                     <p class="review__content">После первой консультации у меня была полная неразбериха
                                         в голове, но потом я все обдумала и мне очень понравились новые идеи. У меня,
                                         так сказать, появилось новое вдохновение. Для меня это было ценно. Стало проще.
-                                        Многие вопросы, по которым я никак не могла принять решения —
-                                        разрешились.</p>
+                                        Многие вопросы, по которым я никак не могла принять решения — разрешились.</p>
                                 </blockquote>
                             </div>
                         </li>
@@ -255,8 +274,7 @@
                                     <p class="review__content">Здорово каждый день ощущать, что планировка квартиры
                                         очень продуманная. Проявляется это в мелочах, но из них и складывается комфорт.
                                         Решение с проемом, соединяющим кухню и гостиную — главная фишка — позволила
-                                        вытянуть изначально безнадёжную планировку и сделать подобие большой
-                                        гостиной.</p>
+                                        вытянуть изначально безнадёжную планировку и сделать подобие большой гостиной.</p>
                                 </blockquote>
                             </div>
                         </li>
@@ -310,8 +328,7 @@
                                     <figcaption>
                                         <h3 class="projects__card-title">Studio, 80</h3>
                                         <p class="projects__card-description">Квартира без стен с единым пространством,
-                                            открытым потолком и темными стенами, с акцентом на центральную
-                                            колонну.</p>
+                                            открытым потолком и темными стенами, с акцентом на центральную колонну.</p>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -392,9 +409,8 @@
                     <h2 class="contact__title">Оставьте ваш Email и мы свяжемся с вами</h2>
                     <div class="contact__form-wrapper">
                         <form class="contact__form" action="#" method="post" enctype="text/plain">
-                            <label>
-                                <input class="contact__input" type="email" name="email" placeholder="Email"
-                                       autocomplete="email" required>
+                            <label for="email-contact">
+                                <input class="contact__input" type="email" id="email-contact" placeholder="Email" autocomplete="email" required>
                             </label>
                             <button class="contact__button" type="submit">Отправить</button>
                         </form>
