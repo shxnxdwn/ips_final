@@ -985,7 +985,6 @@ img {
 
 .projects__cards {
     display: flex;
-    flex-wrap: wrap;
     gap: 40px;
 }
 
