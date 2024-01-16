@@ -267,7 +267,7 @@ img {
     top: 31.15%;
     left: 13.39%;
     z-index: 2;
-    width: 44.375%;
+    width: 44.37%;
 }
 
 .hero__title {
@@ -309,8 +309,8 @@ img {
 
 .hero__slider {
     position: absolute;
-    bottom: 6.034%;
-    left: 7.187%;
+    bottom: 6.03%;
+    left: 7.18%;
     z-index: 3;
     display: flex;
     column-gap: 12px;
@@ -375,11 +375,11 @@ img {
 .mission__cards {
     display: flex;
     justify-content: space-between;
-    column-gap: 13.964%;
+    column-gap: 13.96%;
 }
 
 .mission__cards-card {
-    width: 24.043%;
+    width: 24.04%;
 }
 
 .mission__cards-number {
@@ -485,7 +485,7 @@ img {
 }
 
 .design__image {
-    width: 40.468%;
+    width: 40.46%;
     margin-left: auto;
     object-fit: cover;
 }
@@ -619,9 +619,9 @@ img {
 
 .furniture__container {
     position: relative;
-    bottom: 10.813rem;
+    bottom: 10.81rem;
     left: 0;
-    width: 69.531%;
+    width: 69.53%;
     height: 838px;
     margin: 0 auto;
     border-radius: 16px;
@@ -690,7 +690,7 @@ img {
 
 .advantages__container {
     width: 65.11%;
-    margin: 8.18% auto 8.595%;
+    margin: 8.18% auto 8.59%;
 }
 
 .advantages__list {
@@ -762,8 +762,8 @@ img {
 }
 
 .team__content {
-    width: 69.375%;
-    margin: 14.819% auto 20%;
+    width: 69.37%;
+    margin: 14.82% auto 20%;
 }
 
 .team__title {
@@ -833,7 +833,7 @@ img {
 .reviews__container {
     max-width: 828px;
     margin: 0 auto;
-    padding: 6.515% 0 8.13%;
+    padding: 6.51% 0 8.13%;
 }
 
 .reviews__title {
@@ -951,13 +951,13 @@ img {
 
 .projects__container {
     width: 85.79%;
-    margin: 6.67% auto 11.045%;
+    margin: 6.67% auto 11.04%;
 }
 
 .projects__head {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 2.793%;
+    margin-bottom: 2.79%;
 }
 
 .projects__title {
