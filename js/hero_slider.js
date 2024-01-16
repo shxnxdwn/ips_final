@@ -14,7 +14,7 @@ const changeImages = () => {
     });
     images[count].src = sliderActiveImage;
     count = (count + 1) % images.length;
-    setTimeout(changeImages, 3000);
+    setTimeout(changeImages, 4000);
 };
 
 changeImages();
