@@ -187,17 +187,14 @@ img {
 
 @media screen and (max-width: 1099px) {
     .popup__buttons {
-        width: 90%;
+        width: 80%;
     }
     .popup__form-box {
-        width: 90%;
-    }
-    .popup__button {
-        width: 100%;
+        width: 80%;
     }
 }
 
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 820px) {
     .popup__buttons {
         flex-direction: column;
         row-gap: 10px;
@@ -1096,8 +1093,6 @@ img {
 
 .projects__cards {
     display: flex;
-    gap: 40px;
-    transition: transform 0.3s ease-in-out;
 }
 
 .projects__card {
