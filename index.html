@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Open+Sans&family=Sarala&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Студия дизайна интерьера</title>
 </head>
@@ -16,7 +17,6 @@
     <div class="page">
         <div class="page__popup popup">
             <div class="popup__content">
-                <div class="popup__close-button"></div>
                 <h3 class="popup__title">Мы перезвоним Вам в течение 15 минут</h3>
                 <form class="popup__form" action="#" method="post" enctype="text/plain">
                     <div class="popup__form-box">
@@ -34,8 +34,9 @@
                             <input class="popup__input" type="tel" id="phone" placeholder="Ваш телефон" autocomplete="tel" required>
                         </label>
                     </div>
-                    <div class="popup__form-box">
-                        <button class="popup__button button button_white" type="submit">Отправить</button>
+                    <div class="popup__buttons">
+                        <button class="popup__button button_white" type="submit">Отправить</button>
+                        <button class="popup__button button button_white">Закрыть</button>
                     </div>
                 </form>
             </div>
@@ -290,7 +291,7 @@
                                 <img src="img/projects/arrow-left.svg" alt="arrow-left">
                             </button>
                             <button class="projects__button projects__button_next">
-                                <img src="img/projects/arrow-right.svg" alt="arrow-right">
+                                <img src="img/projects/arrow-right-active.svg" alt="arrow-right">
                             </button>
                         </div>
                     </div>
@@ -450,7 +451,8 @@
     </div>
     <script src="js/menu.js"></script>
     <script src="js/hero_slider.js"></script>
-    <script src="js/swiper.js" type="module"></script>
-    <script src="js/aos.js" type="module"></script>
+    <script src="js/popup.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
 </body>
 </html>
