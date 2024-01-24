@@ -149,6 +149,7 @@ img {
     color: #FFFFFF;
     text-align: center;
     font-family: "Sarala", sans-serif;
+    font-style: normal;
     font-size: 18px;
     line-height: 133%;
     background-color: transparent;
@@ -371,7 +372,7 @@ img {
     .nav__list-link:hover::before,
     .nav__list-link:hover::after,
     .nav__list-link:active {
-        display: none;
+
     }
     .nav__burger-button {
         display: block;
