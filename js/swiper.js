@@ -1,12 +1,26 @@
 "use strict";
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.projects__row', {
     navigation: {
         nextEl: ".projects__button_next",
         prevEl: ".projects__button_prev",
     },
     autoplay: {
         delay: 3000,
+    },
+    breakpoints: {
+        1920: {
+            slidesPerView: 4,
+            slidesPerGroup: 4,
+        },
+        768: {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+        },
+        576: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+        },
     },
 });
 

@@ -349,7 +349,7 @@ img {
     transform: rotate(-45deg);
 }
 
-@media screen and (max-width: 629px) {
+@media screen and (max-width: 767px) {
     .nav__list {
         position: fixed;
         top: -2000px;
@@ -372,7 +372,7 @@ img {
     .nav__list-link:hover::before,
     .nav__list-link:hover::after,
     .nav__list-link:active {
-
+        opacity: 0;
     }
     .nav__burger-button {
         display: block;
@@ -1089,15 +1089,15 @@ img {
     background: transparent;
 }
 
-.projects__button_active {
-}
-
 .projects__row {
+    width: 100%;
+    overflow: hidden;
 }
 
 .projects__cards {
     display: flex;
     gap: 40px;
+    transition: transform 0.3s ease-in-out;
 }
 
 .projects__card {
