@@ -8,8 +8,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Open+Sans&family=Sarala&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Open+Sans&family=Sarala&display=swap">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Студия дизайна интерьера</title>
 </head>
@@ -21,7 +22,7 @@
                 <form class="popup__form" action="#" method="post" enctype="text/plain">
                     <div class="popup__form-box">
                         <label for="name">
-                            <input class="popup__input" type="text" id="name" placeholder="Ваше имя" required>
+                            <input class="popup__input" type="text" id="name" placeholder="Ваше имя" autocomplete="name" required>
                         </label>
                     </div>
                     <div class="popup__form-box">
@@ -88,13 +89,13 @@
                 <div class="hero__slide hero__slide_2"></div>
                 <div class="hero__slide hero__slide_3"></div>
             </section>
-            <section class="main__mission mission" data-aos="fade-up">
-                <div class="mission__container">
+            <section class="main__mission mission">
+                <div class="mission__container" data-aos="fade-up">
                     <div class="mission__title-wrapper">
                         <h2 class="mission__title">Наша задача — помочь вам сформулировать, что такое идеальный
                             интерьер именно для вас, вложить в ваш проект весь наш талант и опыт.</h2>
                     </div>
-                    <div class="mission__cards-wrapper">
+                    <div class="mission__cards-wrapper" data-aos="zoom-in-up">
                         <ul class="mission__cards">
                             <li class="mission__cards-card">
                                 <p class="mission__cards-number">01</p>
@@ -117,7 +118,7 @@
                     </div>
                 </div>
             </section>
-            <section class="main__design design">
+            <section class="main__design design" data-aos="fade-up" data-aos-delay="50" data-aos-offset="500">
                 <div class="design__content">
                     <div class="design__text">
                         <h3 class="design__title">Дизайн и покупка в одном месте</h3>
@@ -132,7 +133,7 @@
                     <img class="design__image" src="img/design/design.webp" alt="design">
                 </div>
             </section>
-            <section class="main__order order">
+            <section class="main__order order" data-aos="fade-up">
                 <div class="order__container">
                     <h2 class="order__title">Подберите мебель для любого проекта</h2>
                     <p class="order__text">Новый способ для профессионалов интерьера покупать мебель. Просмотрите
@@ -143,7 +144,7 @@
                 </div>
             </section>
             <section class="main__furniture furniture">
-                <div class="furniture__container">
+                <div class="furniture__container" data-aos="zoom-in-up">
                     <div class="furniture__head">
                         <div class="furniture__circles">
                             <img src="img/furniture/circle.svg" alt="circle-1">
@@ -184,7 +185,7 @@
                     </div>
                 </div>
             </section>
-            <section class="main__advantages advantages">
+            <section class="main__advantages advantages" data-aos="fade-up" data-aos-delay="50" data-aos-offset="100">
                 <div class="advantages__container">
                     <ul class="advantages__list">
                         <li class="advantages__list-item">
@@ -202,7 +203,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="main__team team">
+            <section class="main__team team" data-aos="zoom-in-up" data-aos-delay="50" data-aos-offset="500">
                 <div class="team__left">
                     <img class="team__left-image" src="img/team/team.webp" alt="team-photo">
                 </div>
@@ -223,7 +224,7 @@
                 <div class="reviews__container">
                     <h2 class="reviews__title">Отзывы</h2>
                     <ul class="reviews__list">
-                        <li class="reviews__list-review review">
+                        <li class="reviews__list-review review" data-aos="fade-up">
                             <div class="review__avatar">
                                 <img src="img/reviews/kirill.png" alt="kirill avatar">
                             </div>
@@ -237,7 +238,7 @@
                                 </blockquote>
                             </div>
                         </li>
-                        <li class="reviews__list-review review">
+                        <li class="reviews__list-review review" data-aos="fade-up">
                             <div class="review__avatar">
                                 <img src="img/reviews/petr.png" alt="petr avatar">
                             </div>
@@ -251,7 +252,7 @@
                                 </blockquote>
                             </div>
                         </li>
-                        <li class="reviews__list-review review">
+                        <li class="reviews__list-review review" data-aos="fade-up">
                             <div class="review__avatar">
                                 <img src="img/reviews/alina.png" alt="alina avatar">
                             </div>
@@ -265,7 +266,7 @@
                                 </blockquote>
                             </div>
                         </li>
-                        <li class="reviews__list-review review">
+                        <li class="reviews__list-review review" data-aos="fade-up">
                             <div class="review__avatar">
                                 <img src="img/reviews/maria.png" alt="maria avatar">
                             </div>
@@ -282,7 +283,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="main__projects projects">
+            <section class="main__projects projects" data-aos="fade-up">
                 <div class="projects__container">
                     <div class="projects__head">
                         <h2 class="projects__title">Проекты</h2>
@@ -423,7 +424,7 @@
                     </div>
                 </div>
             </section>
-            <section class="main__contact contact">
+            <section class="main__contact contact" data-aos="fade-up" data-aos-delay="50" data-aos-offset="100">
                 <div class="contact__container">
                     <h2 class="contact__title">Оставьте ваш Email и мы свяжемся с вами</h2>
                     <div class="contact__form-wrapper">
@@ -472,5 +473,7 @@
     <script src="js/popup.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/swiper.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/aos.js"></script>
 </body>
 </html>
