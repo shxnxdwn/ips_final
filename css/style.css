@@ -354,7 +354,7 @@ img {
         z-index: 5;
         width: 114.21vw;;
         min-height: 100vh;
-        padding: 25vh 0;
+        padding: 15vh 0 20vh;
         flex-direction: column;
         background: linear-gradient(to bottom, rgb(103, 101, 100) 0%, rgb(122, 86, 65) 100%);
         transition: top 1s;
