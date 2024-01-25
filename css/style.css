@@ -93,7 +93,7 @@ img {
     left: 0;
     z-index: 7;
     min-width: 100vw;
-    min-height: 100vh;
+    height: 100vh;
     background: linear-gradient(to bottom, rgb(103, 101, 100) 0%, rgb(122, 86, 65) 100%);
     transition: top 0.5s ;
 }
@@ -353,8 +353,8 @@ img {
         left: -14.21%;
         z-index: 5;
         width: 114.21vw;;
-        height: 100vh;
-        padding: 20vh 0;
+        min-height: 100vh;
+        padding: 25vh 0;
         flex-direction: column;
         background: linear-gradient(to bottom, rgb(103, 101, 100) 0%, rgb(122, 86, 65) 100%);
         transition: top 1s;
@@ -369,7 +369,7 @@ img {
     .nav__list-link:hover::before,
     .nav__list-link:hover::after,
     .nav__list-link:active {
-        opacity: 0;
+        display: none;
     }
     .nav__burger-button {
         display: block;
