@@ -367,8 +367,7 @@ img {
     .nav__list-link::before,
     .nav__list-link::after,
     .nav__list-link:hover::before,
-    .nav__list-link:hover::after,
-    .nav__list-link:active {
+    .nav__list-link:hover::after {
         display: none;
     }
     .nav__burger-button {
