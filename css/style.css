@@ -16,10 +16,10 @@
 
 body {
     line-height: 1;
+    overflow-x: hidden;
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-    overflow-x: hidden;
 }
 
 a, a:visited, a:hover {
@@ -1052,12 +1052,6 @@ img {
 
 /* === PROJECTS ===================================================================================================== */
 
-.main__projects {
-}
-
-.projects {
-}
-
 .projects__container {
     width: 85.79%;
     margin: 6.67% auto 11.04%;
@@ -1095,15 +1089,17 @@ img {
     display: flex;
 }
 
-.projects__card {
-    max-width: 381px;
+.projects__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .projects__card-title {
-    margin: 29px 0 16px 0;
+    margin: 7.6% 0 4.2% 0;
     color: #000000;
     font-family: "Montserrat", sans-serif;
-    font-size: calc(20px + (26 - 20) * ((100vw - 320px) / (1920 - 320)));
+    font-size: calc(16px + (26 - 16) * ((100vw - 320px) / (1920 - 320)));
     font-weight: 400;
     line-height: 120%;
 }

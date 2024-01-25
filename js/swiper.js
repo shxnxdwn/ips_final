@@ -5,31 +5,29 @@ const swiper = new Swiper('.swiper', {
         nextEl: ".projects__button_next",
         prevEl: ".projects__button_prev",
     },
-    autoplay: {
-        delay: 3000,
-    },
     slidesPerView: 4,
     slidesPerGroup: 4,
+    spaceBetween: 40,
     breakpoints: {
-        576: {
+        320: {
             slidesPerView: 1,
             slidesPerGroup: 1,
             spaceBetween: 0,
         },
-        1440: {
+        640: {
             slidesPerView: 2,
             slidesPerGroup: 2,
-            spaceBetween: 10,
+            spaceBetween: 20,
         },
-        1600: {
+        1023: {
             slidesPerView: 3,
             slidesPerGroup: 3,
-            spaceBetween: 170,
+            spaceBetween: 30,
         },
-        1800: {
+        1400: {
             slidesPerView: 4,
             slidesPerGroup: 4,
-            spaceBetween: 30,
+            spaceBetween: 40,
         },
     },
 });
