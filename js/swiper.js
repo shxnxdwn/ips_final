@@ -5,6 +5,9 @@ const swiper = new Swiper('.swiper', {
         nextEl: ".projects__button_next",
         prevEl: ".projects__button_prev",
     },
+    autoplay: {
+        delay: 3000,
+    },
     slidesPerView: 4,
     slidesPerGroup: 4,
     spaceBetween: 40,
