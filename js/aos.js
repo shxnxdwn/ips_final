@@ -8,3 +8,5 @@ AOS.init({
     delay: 100,
     once: true,
 });
+
+window.addEventListener('load', AOS.refresh);
